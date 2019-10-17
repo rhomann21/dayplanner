@@ -11,12 +11,11 @@
 <body>
     <div class="wrapper">
         <div class="jumbotron jumbotron-fluid" style="background-color: white;">
-        <div class="container">
-            <h1 class="display-4">Work Week Scheduler</h1>
-            <p class="lead">A simple app to manage your schedule.</p>
-        <div class="moment" id="dateTime">The date will go here.
-        </div>  
-        </div>
+            <div class="container">
+                <h1 class="display-4">Work Week Scheduler</h1>
+                <p class="lead">A simple app to manage your schedule.</p>
+                <div class="moment" id="dateTime"></div>  
+            </div>
         </div>
     </div>
 
@@ -38,7 +37,7 @@
             <th scope="row">10am</th>
             <td>
             <div class="input-group mb-3">
-                <input type="text" class="form-control" aria-label="Recipient's username" aria-describedby="button-addon2">
+                <input type="text" class="form-control" id="dailyTask" aria-label="Recipient's username" aria-describedby="button-addon2">
                 <div class="input-group-append">
                     <button class="btn btn-outline-secondary" type="button" id="button-addon2">Save</button>
                 </div>
@@ -54,10 +53,37 @@
                     <button class="btn btn-outline-secondary" type="button" id="button-addon2">Save</button>
                 </div>
             </div>
+
+            </td>
+            </tr>
+            <tr>
+            <th scope="row">12pm</th>
+            <td>
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" aria-label="Recipient's username" aria-describedby="button-addon2">
+                <div class="input-group-append">
+                    <button class="btn btn-outline-secondary" type="button" id="button-addon2">Save</button>
+                </div>
+            </div>
+
+            </td>
+            </tr>
+            <tr>
+            <th scope="row">1pm</th>
+            <td>
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" aria-label="Recipient's username" aria-describedby="button-addon2">
+                <div class="input-group-append">
+                    <button class="btn btn-outline-secondary" type="button" id="button-addon2">Save</button>
+                </div>
+            </div>
+
             </td>
             </tr>
         </table>
     </div>
     </div>
+    <script src="moment.js"></script>
+    <script src="app.js"></script>
 </body>
 </html>

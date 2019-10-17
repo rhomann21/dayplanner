@@ -1,6 +1,10 @@
-var saveBtn = document.getElementById="button-addon2";//today's date
+var now = moment().format('MMMM Do YYYY; h:mm a');
+var dateElement = document.querySelector('#dateTime');
+
+dateElement.innerHTML = now.toString();
 
 //helper functions
+
 
 //events
 
