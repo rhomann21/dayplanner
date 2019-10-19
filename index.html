@@ -23,58 +23,46 @@
     <div class="tableWrapper" id="tWrap">
         <table class="table table-sm">
             <tr>
-            <th scope="row">9am</th>
+            <th class ="timeOfDay" scope="row">9am</th>
             <td>
             <div class="input-group mb-3">
-                <input type="text" class="form-control" aria-label="Recipient's username" aria-describedby="button-addon2">
+                <textarea class="text" id="hour-9"></textarea>
                 <div class="input-group-append">
-                    <button class="btn btn-outline-secondary" type="button" id="button-addon2">Save</button>
+                    <button class="btn btn-outline-secondary js-save" type="button" id="button-addon2" data-key="hour-9">Save</button>
                 </div>
             </div>
             </td>
             </tr>
             <tr>
-            <th scope="row">10am</th>
+            <th class ="timeOfDay" scope="row">10am</th>
             <td>
             <div class="input-group mb-3">
-                <input type="text" class="form-control" id="dailyTask" aria-label="Recipient's username" aria-describedby="button-addon2">
+                <textarea class="text" id="hour-10"></textarea>
                 <div class="input-group-append">
-                    <button class="btn btn-outline-secondary" type="button" id="button-addon2">Save</button>
+                    <button class="btn btn-outline-secondary js-save" type="button" id="button-addon2" data-key="hour-10">Save</button>
                 </div>
             </div>
             </td>
             </tr>
             <tr>
-            <th scope="row">11am</th>
+            <th class ="timeOfDay" scope="row">11am</th>
             <td>
             <div class="input-group mb-3">
-                <input type="text" class="form-control" aria-label="Recipient's username" aria-describedby="button-addon2">
+                <textarea class="text" id="hour-11"></textarea>
                 <div class="input-group-append">
-                    <button class="btn btn-outline-secondary" type="button" id="button-addon2">Save</button>
-                </div>
-            </div>
-
-            </td>
-            </tr>
-            <tr>
-            <th scope="row">12pm</th>
-            <td>
-            <div class="input-group mb-3">
-                <input type="text" class="form-control" aria-label="Recipient's username" aria-describedby="button-addon2">
-                <div class="input-group-append">
-                    <button class="btn btn-outline-secondary" type="button" id="button-addon2">Save</button>
+                    <button class="btn btn-outline-secondary js-save" type="button" id="button-addon2" data-key="hour-11">Save</button>
                 </div>
             </div>
 
             </td>
             </tr>
             <tr>
-            <th scope="row">1pm</th>
+            <th class ="timeOfDay" scope="row">12pm</th>
             <td>
             <div class="input-group mb-3">
-                <input type="text" class="form-control" aria-label="Recipient's username" aria-describedby="button-addon2">
+                <textarea class="text" id="hour-12"></textarea>
                 <div class="input-group-append">
-                    <button class="btn btn-outline-secondary" type="button" id="button-addon2">Save</button>
+                    <button class="btn btn-outline-secondary js-save" type="button" id="button-addon2" data-key="hour-12">Save</button>
                 </div>
             </div>
 
@@ -87,3 +75,33 @@
     <script src="app.js"></script>
 </body>
 </html>
+
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+</head>
+<body>
+    <div>
+        <div>9 am</div>
+        <textarea id="hour-9"></textarea>
+        <button class="js-save" data-key="hour-9">save</button>
+    </div>
+    <div>
+        <div>10 am</div>
+        <textarea id="hour-10"></textarea>
+        <button class="js-save" data-key="hour-10">save</button>
+    </div>
+    <div>
+        <div>11 am</div>
+        <textarea id="hour-11"></textarea>
+        <button class="js-save" data-key="hour-11">save</button>
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>-->

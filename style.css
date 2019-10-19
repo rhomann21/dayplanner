@@ -6,3 +6,15 @@
     border-bottom: 2px solid black;
     text-align: center;
 }
+
+.tableWrapper {
+    align-content: center;
+}
+
+.text {
+    width: 700px;
+}
+
+.timeOfDay {
+    text-align: right;
+}
