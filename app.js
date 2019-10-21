@@ -1,32 +1,30 @@
 $(document).ready(function() {
-var now = moment().format('MMMM Do YYYY; h:mm a');
+   var now = moment().format('MMMM Do YYYY; h:mm a');
 var dateElement = document.querySelector('#dateTime');
 
 dateElement.innerHTML = now.toString();
 
-//helper functions
-   $('.js-save').on('click', function() {
-       /* get the key and the value */
-       var timeOfDay = $(this).parent().attr('id');
-       var textOfDay = $(this).siblings('.description').val();
-
-       // save it local storage
-       localStorage.setItem(timeOfDay, valueOfDay);
+   var dailyTasks = JSON.parse(localStorage.getItem("myDay")) || {};
+   /*get the key and the value*/
+   $(".js-save").on("click", function() {
+     var key = $(this).data("key");
+     var value = $(`#${key}`).val();
+     console.log(value);
+ 
+     //save to local storage
+     dailyTasks[key] = value;
+     localStorage.setItem("myDay", JSON.stringify(dailyTasks));
    });
-
-   /* init */
-   /* pull from local storage */
-   $('#hour-9 .description').val(localStorage.getItem('hour-9'));
-   $('#hour-10 .description').val(localStorage.getItem('hour-10'));
-   $('#hour-11 .description').val(localStorage.getItem('hour-11'));
-   $('#hour-12 .description').val(localStorage.getItem('hour-12'));
-
-
-});
-
-//events
-
-//init
- /*check local storage object for matching id*/
-    /*set today's date in header*/
-    /*color code past/current/future bars*/
+   /*init*/
+   /*pull from local storage*/
+   $("#hour-9").val(dailyTasks["hour-9"]);
+   $("#hour-10").val(dailyTasks["hour-10"]);
+   $("#hour-11").val(dailyTasks["hour-11"]);
+   $("#hour-12").val(dailyTasks["hour-12"]);
+   $("#hour-1").val(dailyTasks["hour-1"]);
+   $("#hour-2").val(dailyTasks["hour-2"]);
+   $("#hour-3").val(dailyTasks["hour-3"]);
+   $("#hour-4").val(dailyTasks["hour-4"]);
+   $("#hour-5").val(dailyTasks["hour-5"]);
+ });
+ 
