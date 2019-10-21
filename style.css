@@ -1,8 +1,6 @@
-.contentWrapper {
+.tableWrapper {
     text-align: center;
-}
-.form-control {
-    border: 0;
+    padding-block-end: 20px;
 }
 
 .jumbotron {
@@ -10,14 +8,21 @@
     text-align: center;
 }
 
-.tableWrapper {
-    align-content: center;
-}
-
 .text {
     width: 700px;
+    height: 60px;
+    border: 1px solid black;
+    padding: 2px;
+    font-family: Tahoma, sans-serif;
+    resize: none; 
 }
 
-.timeOfDay {
+.hourDisplay {
+    width: 60px;
+    height: 60px;
+    border: none;
+    padding: 2px;
+    font-family: Tahoma, sans-serif;
     text-align: right;
+    resize: none;
 }
