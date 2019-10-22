@@ -29,7 +29,7 @@ $(document).ready(function() {
 
  
 
-var currentHour = moment().format('hh');
+var currentHour = moment().format('H');
 var allHourElements = document.getElementsByClassName('hourTextArea');
 
 for (i = 0; i < allHourElements.length; i++) {
