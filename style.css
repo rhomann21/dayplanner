@@ -1,3 +1,7 @@
+.btn {
+    justify-content: left;
+}
+
 .tableWrapper {
     text-align: center;
     padding-block-end: 20px;

@@ -1,6 +1,7 @@
 $(document).ready(function() {
-   var now = moment().format('MMMM Do YYYY; h:mm a');
-var dateElement = document.querySelector('#dateTime');
+   var now = moment().format('lll');
+ //  var currentHour = moment().format('hh');
+   var dateElement = document.querySelector('#dateTime');
 
 dateElement.innerHTML = now.toString();
 
@@ -28,3 +29,10 @@ dateElement.innerHTML = now.toString();
    $("#hour-5").val(dailyTasks["hour-5"]);
  });
  
+var timeHours = [];
+
+//if the hour of the day is less than the current hour, 
+//then the color of the text box is blue
+//else the color of the text box is green
+//else the color of the text box is white.
+
