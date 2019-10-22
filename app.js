@@ -1,11 +1,10 @@
 $(document).ready(function() {
    var now = moment().format('lll');
- //  var currentHour = moment().format('hh');
    var dateElement = document.querySelector('#dateTime');
 
-dateElement.innerHTML = now.toString();
+  dateElement.innerHTML = now.toString();
 
-   var dailyTasks = JSON.parse(localStorage.getItem("myDay")) || {};
+  var dailyTasks = JSON.parse(localStorage.getItem("myDay")) || {};
    /*get the key and the value*/
    $(".js-save").on("click", function() {
      var key = $(this).data("key");
@@ -16,7 +15,7 @@ dateElement.innerHTML = now.toString();
      dailyTasks[key] = value;
      localStorage.setItem("myDay", JSON.stringify(dailyTasks));
    });
-   /*init*/
+
    /*pull from local storage*/
    $("#hour-9").val(dailyTasks["hour-9"]);
    $("#hour-10").val(dailyTasks["hour-10"]);
@@ -29,10 +28,32 @@ dateElement.innerHTML = now.toString();
    $("#hour-5").val(dailyTasks["hour-5"]);
  });
  
-var timeHours = [];
+//var currentHour = moment().format('hh');
+//var timeHours = [];
 
-//if the hour of the day is less than the current hour, 
-//then the color of the text box is blue
-//else the color of the text box is green
-//else the color of the text box is white.
+//var currentHour = moment()hours()
+//loop through hours
+//var blockHour = sometihng
+//if blockHour < current hour,
+    //stylize it like this
+//else if blockHour > currentHour
+    //stylize it like this
+//else 
+    //stylize it like this
 
+
+
+// pseudo code
+// var currentHour = moment().format('hh');
+// var allHourElements = document.getElementsByClassName('hourTextArea');
+// loop through allHourElements
+/* if (allHourElements(i).getAttribute('data-hour') < currentHour {}) {
+  allHourElements(i).addClass('previousHourColor');
+} else if (allHourElements(i).getAttribute('data-hour') === currentHour {}) {
+  allHourElements(i).addClass('currentHourColor');
+} else {
+  allHourElements(i).addClass('futureHourColor');
+}
+
+
+*/
