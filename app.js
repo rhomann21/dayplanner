@@ -28,20 +28,37 @@ $(document).ready(function() {
    $("#hour-5").val(dailyTasks["hour-5"]);
 
  
-
+function (checkTime) {
 var currentHour = moment().format('hh');
 var allHourElements = document.getElementsByClassName('hourTextArea');
 
-for (i = 0; i < allHourElements; i++) {
+for (i = 0; i < allHourElements.length; i++) {
     if (allHourElements[i].getAttribute('data-hour') < currentHour) {
-        allHourElements[i].addClass('previousHourColor');
+        allHourElements[i].classList.add("previousHourColor");
     } else if (allHourElements[i].getAttribute('data-hour') === currentHour){
-        allHourElements[i].addClass('currentHourColor');
+        allHourElements[i].classList.add("currentHourColor");
     } else {
-       allHourElements[i].addClass('futureHourColor');
+       allHourElements[i].classList.add("pastHourColor");
     };
   };
 
-
+};
 
 });
+
+/*function checkTime() {
+  var currentHour = parseInt(moment().format("H"));
+  var allHourElements = $("hourTextArea");
+  idTime = "";
+  for (i = 0; i < allHourElements.length; i++) {
+    var idTime = hourTextArea[i].id;
+    if (now < idTime) {
+      $(`#${idTime}`).attr("style", "background-color:rgb(161, 180, 255)");
+    } else if (now > idTime) {
+      $(`#${taTime}`).attr("style", "background-color:rgb(186, 255, 161)"";
+      else {
+        
+      }
+    }
+  }
+}*/
