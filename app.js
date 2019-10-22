@@ -28,7 +28,7 @@ $(document).ready(function() {
    $("#hour-5").val(dailyTasks["hour-5"]);
 
  
-function (checkTime) {
+
 var currentHour = moment().format('hh');
 var allHourElements = document.getElementsByClassName('hourTextArea');
 
@@ -42,9 +42,9 @@ for (i = 0; i < allHourElements.length; i++) {
     };
   };
 
-};
-
 });
+
+
 
 /*function checkTime() {
   var currentHour = parseInt(moment().format("H"));
@@ -55,7 +55,7 @@ for (i = 0; i < allHourElements.length; i++) {
     if (now < idTime) {
       $(`#${idTime}`).attr("style", "background-color:rgb(161, 180, 255)");
     } else if (now > idTime) {
-      $(`#${taTime}`).attr("style", "background-color:rgb(186, 255, 161)"";
+      $(`#${idTime}`).attr("style", "background-color:rgb(186, 255, 161)"";
       else {
         
       }
