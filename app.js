@@ -26,34 +26,22 @@ $(document).ready(function() {
    $("#hour-3").val(dailyTasks["hour-3"]);
    $("#hour-4").val(dailyTasks["hour-4"]);
    $("#hour-5").val(dailyTasks["hour-5"]);
- });
+
  
-//var currentHour = moment().format('hh');
-//var timeHours = [];
 
-//var currentHour = moment()hours()
-//loop through hours
-//var blockHour = sometihng
-//if blockHour < current hour,
-    //stylize it like this
-//else if blockHour > currentHour
-    //stylize it like this
-//else 
-    //stylize it like this
+var currentHour = moment().format('hh');
+var allHourElements = document.getElementsByClassName('hourTextArea');
 
-
-
-// pseudo code
-// var currentHour = moment().format('hh');
-// var allHourElements = document.getElementsByClassName('hourTextArea');
-// loop through allHourElements
-/* if (allHourElements(i).getAttribute('data-hour') < currentHour {}) {
-  allHourElements(i).addClass('previousHourColor');
-} else if (allHourElements(i).getAttribute('data-hour') === currentHour {}) {
-  allHourElements(i).addClass('currentHourColor');
-} else {
-  allHourElements(i).addClass('futureHourColor');
-}
+for (i = 0; i < allHourElements; i++) {
+    if (allHourElements[i].getAttribute('data-hour') < currentHour) {
+        allHourElements[i].addClass('previousHourColor');
+    } else if (allHourElements[i].getAttribute('data-hour') === currentHour){
+        allHourElements[i].addClass('currentHourColor');
+    } else {
+       allHourElements[i].addClass('futureHourColor');
+    };
+  };
 
 
-*/
+
+});

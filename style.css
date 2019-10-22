@@ -2,31 +2,45 @@
     justify-content: left;
 }
 
-.tableWrapper {
-    text-align: center;
-    padding-block-end: 20px;
+.currentHourColor {
+    background-color: teal;
+}
+
+.futureHourColor {
+    background-color: lightgreen
+}
+
+.hourDisplay {
+    border: none;
+    height: 60px;
+    font-family: Tahoma, sans-serif;
+    padding: 2px;
+    resize: none;
+    text-align: right;
+    width: 60px;
 }
 
 .jumbotron {
+    background-color: white;
     border-bottom: 2px solid black;
     text-align: center;
 }
 
-.text {
-    width: 700px;
-    height: 60px;
-    border: 1px solid black;
-    padding: 2px;
-    font-family: Tahoma, sans-serif;
-    resize: none; 
+.previousHourColor {
+    background-color: lightgrey;
 }
 
-.hourDisplay {
-    width: 60px;
-    height: 60px;
-    border: none;
-    padding: 2px;
+.text {
+    border: 1px solid black;
     font-family: Tahoma, sans-serif;
-    text-align: right;
-    resize: none;
+    height: 60px;
+    padding: 2px;
+    resize: none; 
+    width: 700px;
 }
+
+.tableWrapper {
+    padding-block-end: 20px;
+    text-align: center;
+}
+
